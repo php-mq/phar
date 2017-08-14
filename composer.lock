@@ -84,12 +84,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-mq/server.git",
-                "reference": "d3222266fbe00ac44f2a2e499f150e9a030cb4fe"
+                "reference": "a230ca88294292856ca1e0b15d9d5377d86ab1e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-mq/server/zipball/d3222266fbe00ac44f2a2e499f150e9a030cb4fe",
-                "reference": "d3222266fbe00ac44f2a2e499f150e9a030cb4fe",
+                "url": "https://api.github.com/repos/php-mq/server/zipball/a230ca88294292856ca1e0b15d9d5377d86ab1e5",
+                "reference": "a230ca88294292856ca1e0b15d9d5377d86ab1e5",
                 "shasum": ""
             },
             "require": {
@@ -151,7 +151,7 @@
                 "source": "https://github.com/php-mq/server/tree/master",
                 "issues": "https://github.com/php-mq/server/issues"
             },
-            "time": "2017-08-13T21:51:16+00:00"
+            "time": "2017-08-14T19:29:09+00:00"
         },
         {
             "name": "php-mq/stream",
