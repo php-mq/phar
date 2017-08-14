@@ -1,0 +1,32 @@
+{
+	"chmod": "0755",
+	"compression": "GZ",
+	"compactors": [
+		"Herrera\\Box\\Compactor\\Php"
+	],
+	"directories": [
+		"vendor/php-mq",
+		"vendor/psr"
+	],
+	"files": [
+		"LICENSE"
+	],
+	"finder": [
+		{
+			"name": "*.php",
+			"exclude": [
+				"bin",
+				"tm"
+			],
+			"in": "vendor"
+		}
+	],
+	"extract": false,
+	"git-version": "package_version",
+	"intercept": true,
+	"main": "vendor/php-mq/server/bin/main.php",
+	"metadata": "PHPMQ the PHP message queue server",
+	"output": "build/phpmq.phar",
+	"shebang": "#!/usr/bin/env php",
+	"stub": true
+}

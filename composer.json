@@ -1,0 +1,57 @@
+{
+	"name": "php-mq/phar",
+	"description": "PHAR distribution for php-mq/server",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Holger Woltersdorf",
+			"email": "hw@hollo.me"
+		}
+	],
+	"require": {
+		"php": ">=7.1",
+		"php-mq/server": "dev-master"
+	},
+	"repositories": {
+		"php-mq/server": {
+			"type": "vcs",
+			"url": "https://github.com/php-mq/server.git"
+		},
+		"php-mq/stream": {
+			"type": "vcs",
+			"url": "https://github.com/php-mq/stream.git"
+		},
+		"php-mq/protocol": {
+			"type": "vcs",
+			"url": "https://github.com/php-mq/protocol.git"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"PHPMQ\\Phar\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"PHPMQ\\Phar\\Tests\\": "tests/"
+		}
+	},
+	"require-dev": {
+		"tm/tooly-composer-script": "^1.0",
+		"roave/security-advisories": "dev-master"
+	},
+	"scripts": {
+		"post-install-cmd": "Tooly\\ScriptHandler::installPharTools",
+		"post-update-cmd": "Tooly\\ScriptHandler::installPharTools"
+	},
+	"extra": {
+		"tools": {
+			"box": {
+				"url": "https://github.com/box-project/box2/releases/download/2.7.5/box-2.7.5.phar",
+				"only-dev": true
+			}
+		}
+	}
+}
